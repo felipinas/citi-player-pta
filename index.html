@@ -11,15 +11,21 @@
 </head>
 <body>
 
+    <audio src="assets/songs/madagascar.mp3" id="audio"></audio>
+
     <div class="player">
 
         <div class="buttons">
 
-            <img src="assets/backward.svg" alt="Voltar" class="icon">
+            <img src="assets/backward.svg" alt="Voltar" class="icon" id="minus">
 
-            <img src="assets/play.svg" alt="Play" class="play icon">
+            <div class="play-pause">
+                <img src="assets/play.svg" alt="Play" class="play icon" id="play">
 
-            <img src="assets/forward.svg" alt="Passar" class="icon">
+                <img src="assets/pause.svg" alt="Pause" class="icon" id="pause">
+            </div>
+
+            <img src="assets/forward.svg" alt="Passar" class="icon" id="plus">
 
         </div>
 
@@ -46,6 +52,9 @@
         </div>
 
     </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/songs.js"></script>
     
 </body>
 </html>

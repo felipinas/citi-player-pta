@@ -31,8 +31,14 @@ body {
     align-items: center;
     justify-content: center;
 }
-.play {
+.play-pause {
+    display: flex;
+    flex-direction: column;
+
     margin: 0px 18px;
+}
+.play {
+    margin-bottom: 28px;
 }
 .icon {
     width: 20px;
@@ -72,6 +78,14 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #d3d3d3;
 }
+.more-citi {
+    display: flex;
+    align-items: center;
+
+    color: #d3d3d3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 #song {
     font-weight: 700;
     font-size: 14pt;
@@ -90,4 +104,10 @@ body {
 
     border-radius: 10px;
     background-color: #c4c4c4;
+
+    transition: 0.6s;
+    cursor: pointer;
+}
+#progression:hover {
+    padding: 2px;
 }
