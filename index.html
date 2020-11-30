@@ -5,13 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CITi Player</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/web-kits.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <audio src="assets/songs/madagascar.mp3" id="audio"></audio>
+    <audio src="assets/songs/madagascar.mp3" id="audio" loop></audio>
+
+    <div class="songs">
+
+        <div class="songs-content">
+
+            <div class="photo-song" id="pic-song">
+
+            </div>
+
+            <ul>
+                <li id="mad" onclick="changeSong(0)">
+                    <img src="assets/play-button.svg" alt="Play">
+                    <span>Madagascar - Edy Lemond</span>
+                </li>
+                <li id="ski" onclick="changeSong(1)">
+                    <img src="assets/play-button.svg" alt="Play">
+                    <span>Skibidi - Little Big</span>
+                </li>
+                <li id="praeira" onclick="changeSong(2)">
+                    <img src="assets/play-button.svg" alt="Play">
+                    <span>Praeira - Chico Science</span>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
 
     <div class="player">
 
@@ -44,8 +72,7 @@
 
                 </div>
 
-                <div id="progression">
-                </div>    
+                <input type="range" name="" min="0" value="0" id="progression">   
 
             </div>
             
