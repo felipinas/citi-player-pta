@@ -50,7 +50,7 @@ plus.addEventListener("click", () => {
     audio.currentTime += 10
 })
 
-volume.addEventListener("input", () => {
+volumeRange.addEventListener("input", () => {
     audio.volume = volumeRange.value / 100
 })
 
